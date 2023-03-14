@@ -18,7 +18,8 @@ token = auth_token_data["token"]
 
 # print(auth_token.text)
 
-url = "https://api4.prismacloud.io/license/api/v2/time_series"
+# url = "https://api4.prismacloud.io/license/api/v2/time_series"
+url = "https://api4.prismacloud.io/license/api/v2/usage"
 
 group_payload = {}
 group_payload["accountIds"] = []
