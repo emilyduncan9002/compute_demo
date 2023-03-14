@@ -1,11 +1,12 @@
 import requests
 import json
+import os
 
 url = "https://api4.prismacloud.io/login"
 
 payload = {}
-payload["username"] = "c95e8e1c-a5bc-448a-a45e-da055bc41a37"
-payload["password"] = "hE4ACsLl1HuabMJDvYZb/RjScCA="
+payload["username"] = os.environ.get("prismaUserName")
+payload["password"] = os.environ.get("prismaSecretKey")
 payload_json = json.dumps(payload)
 headers = {
     "Content-Type": "application/json; charset=UTF-8",
