@@ -1,0 +1,13 @@
+kind: Namespace
+apiVersion: v1
+metadata:
+ name: twistlock
+ labels:
+  app: juice-shop
+---
+kind: Namespace
+apiVersion: v1
+metadata:
+ name: juice-shop
+ labels:
+  app: juice-shop
